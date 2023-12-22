@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1206</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="MyOpenGLWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1181</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1206</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>绘制</string>
+    </property>
+    <addaction name="actionWireFrame"/>
+    <addaction name="actionnonWireFrame"/>
+    <addaction name="actionclear"/>
+    <addaction name="actionMap"/>
+    <addaction name="actionMap2"/>
+    <addaction name="actionMap3"/>
+    <addaction name="actionMap4"/>
+    <addaction name="actionMap5"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actiontriangle">
+   <property name="text">
+    <string>三角形</string>
+   </property>
+  </action>
+  <action name="actionWireFrame">
+   <property name="text">
+    <string>线框模式</string>
+   </property>
+  </action>
+  <action name="actionnonWireFrame">
+   <property name="text">
+    <string>填充模式</string>
+   </property>
+  </action>
+  <action name="actionclear">
+   <property name="text">
+    <string>清空画板</string>
+   </property>
+  </action>
+  <action name="actionrect">
+   <property name="text">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="actioncube">
+   <property name="text">
+    <string>立方体</string>
+   </property>
+  </action>
+  <action name="actionMeshLine">
+   <property name="text">
+    <string>网格</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>k</string>
+   </property>
+  </action>
+  <action name="actionMap">
+   <property name="text">
+    <string>地图</string>
+   </property>
+  </action>
+  <action name="actionMap2">
+   <property name="text">
+    <string>地图2</string>
+   </property>
+  </action>
+  <action name="actionMap3">
+   <property name="text">
+    <string>地图3</string>
+   </property>
+  </action>
+  <action name="actionMap4">
+   <property name="text">
+    <string>地图4</string>
+   </property>
+  </action>
+  <action name="actionMap5">
+   <property name="text">
+    <string>地图5</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyOpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">myopenglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
